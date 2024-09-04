@@ -33,3 +33,9 @@ if (altura <= 154) {
 } else {
     datos.innerHTML += "<h1>Eres una persona alta</h1>";   
 }
+//Bucles for inicializador, condicion, incrementador
+for (let year = 2000; year <= 2024; year++){
+    datos.innerHTML += "<h2>Estamos en el año: " + year + "</h2>";
+}
+
+//array
