@@ -38,4 +38,21 @@ for (let year = 2000; year <= 2024; year++){
     datos.innerHTML += "<h2>Estamos en el año: " + year + "</h2>";
 }
 
-//array
+//Arrays
+let nombres = ["Pimbo", "Renyi", "Hinata"];
+
+let divNombres = document.querySelector("#nombres");
+
+// divNombres.innerHTML = nombres[2];
+
+divNombres.innerHTML = "<h1>Listado de nombres</h1><ul>";
+
+// nombres.forEach(nombre => {
+//     divNombres.innerHTML += "<li>" + nombre + "</li>";
+// });
+
+for (let nombre of nombres) {
+    divNombres.innerHTML += "<li>" + nombre + "</li>";
+}
+
+divNombres.innerHTML += "</ul>";
