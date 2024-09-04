@@ -6,7 +6,9 @@ nombre = "Rick";
 
 //Constantes
 const apellido = "Villanueva";
-const altura = 154;
+
+//otra variable
+let altura = 154;
 
 //Mostrar por consola
 console.log(nombre);
@@ -25,3 +27,9 @@ datos.innerHTML = `
 `;
 
 //condiciones
+altura = 160;
+if (altura <= 154) {
+    datos.innerHTML += "<h1>Eres una persona chaparra</h1>";
+} else {
+    datos.innerHTML += "<h1>Eres una persona alta</h1>";   
+}
