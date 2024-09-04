@@ -56,3 +56,23 @@ for (let nombre of nombres) {
 }
 
 divNombres.innerHTML += "</ul>";
+
+//Funciones
+const miInformacion = (nombre, altura) => {
+    let misDatos = `
+        <hr>
+        <h1> Soy la caja de datos</h1>
+        <h2>Mi nombre es: ${nombre}</h2>
+        <h3>Mi altura es:${altura} cm</h3>
+    `;
+    return misDatos;
+}
+
+// console.log(miInformacion("Katteryn Villanueva", 154));
+
+//imprimir por pantalla
+const imprimir = () => {
+    let datos = document.querySelector("#datos");
+    datos.innerHTML += miInformacion("Villanueva", 154);
+}
+imprimir();
